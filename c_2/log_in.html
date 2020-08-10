@@ -1,0 +1,46 @@
+<html>
+    <style>
+        .flexbox{
+            display: flex;
+            background-image: url(aa.jpg);
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            margin: 20% 30%;
+            border-radius: 5%;
+            text-align: center;
+        }
+        .one{
+            color:purple;
+        }
+    </style>
+    <script type="text/javascript">
+        function checkfield1(){
+            var field=document.getElementById("field1").value;
+            if(field.length < 5){
+                document.getElementById("msg1").innerHTML="";
+            }
+            else{
+                document.getElementById("msg2").innerHTML="";
+            }
+        }
+        function mul(){
+            alert("website isnt complete yet");
+        }
+    </script>
+    <body style="background-image: url(bg.jpg);">
+        <div class="flexbox">
+        <div class="one"><P>Log in</P></div>
+        <div><input id="field1" type="text" onblur="checkfield1();" placeholder="Email"><span id="msg1"></span></div>
+        <p></p>
+        <div><input id="field2" type="password" placeholder="password"><span id="msg2"></span></div>
+        <p></p>
+        <div><button onclick="mul()">Submit</button></div>
+        <div><h5 style="color:peachpuff;"><a href="https://www.google.com";>Forgot password?</a></h5></div>
+        <p></p>
+        </div>
+        <script src="/Users/apple/Desktop/c_2/ball.js"></script>
+    </body>
+</html>
+

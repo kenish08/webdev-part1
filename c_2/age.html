@@ -1,0 +1,52 @@
+<html>
+    <style>
+        .one{
+            color: palevioletred;
+            font-size: large;
+            border-left: 200%;
+        }
+        .two{
+            color: red;
+            font-size: medium;
+            border-radius: 200%;
+        }
+        .three{
+            color: greenyellow;
+            font-size: large;
+            border-radius: 200%;
+        }
+        .flexbox{
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            margin: 20% 25%;
+            border-radius: 7%;
+        }
+    </style>
+    <title>Age calculator</title>
+    <script>
+        function math()
+        {
+            var b = document.getElementById("input").value;
+            var c = document.getElementById("in").value;
+            alert("the age is " + (c-b));
+          
+        }
+    </script>
+    <body style="background-image: url(bg.jpg);">
+        <div class="flexbox">
+        <div class="one"><head>Want to know your AGE?</head></div>
+        <div><h4 style="color: cyan;">You hav come to the right place!</h4></div>
+        <div class="two"><p>born?</p></div>
+        <div><input id="input" type="number"></div>
+        <div class="two"><p>current?</p></div>
+        <div><input id="in" type="number"></div>
+        <div><button onclick="math()">age</button></div>
+        <div><p id="input"></p></div>
+        <div><p id="in"></p></div>
+        </div>
+    </body>
+</html>

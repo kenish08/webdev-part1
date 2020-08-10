@@ -1,0 +1,48 @@
+<html>
+    <style>
+        .flexbox{
+            display: flex;
+            background-image: url(bg.jpg);
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            margin: 13% 30%;
+            border-radius: 5%;
+            text-align: center;
+        }
+        .one{
+            color: bisque;
+        }
+    </style>
+    <script>
+        function checkfield1(){
+            var field=document.getElementById("field1").value;
+            if(field.length < 5)
+                document.getElementById("msg1").innerHTML="Too short";
+            else
+                document.getElementById("msg1").innerHTML="That's long enough";
+        }
+        function checkfield2(){
+            var fields=document.getElementById("field2").value;
+            if(fields !=" ")
+                document.getElementById("msg2").innerHTML= "input accepted";  
+            else
+                document.getElementById("msg2").innerHTML= "input not accepted";
+        }
+        function mul(){
+            alert("website isnt complete yet");
+        }
+    </script>
+    <body style="background-image: url(aa.jpg);">
+        <div class="flexbox">
+        <div class="one"><P>Log in</P></div>
+        <div><h1>Enter ID</h1></div>
+        <div><input id="field1" type="text" onblur="checkfield1();"><span id="msg1"></span></div>
+        <div><h1>Enter password</h1></div>
+        <div><input id="field2" type="text" onblur="checkfield2();"><span id="msg2"></span></div>
+        <div><input id="field3" type="text" onblur="checkfield3();"><span id="msg3"></span></div>
+        <div><button onclick="mul()">Submit</button></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <h1>color changer</h1>
+    </head>
+    <style>
+        .one{
+            color: chartreuse;
+        }
+    </style>
+    <script type="text/javascript">
+    function displayin()
+    {
+        var textin = document.getElementById("name").value;
+        if (textin.length==0)
+        document.getElementById('para').innerHTML = "hey you didnt type anything!";
+        else if (textin == "blue")
+        document.getElementById("para").innerHTML = textin;
+    }
+    </script>
+    <title>
+        Heading!
+    </title>
+    <body>
+        <div class="one"><h4>Type somthing to change its color</h4><br><br></div>
+        <input id="name" type="text">
+        <button onclick="displayin();">color it</button>
+        <p id="para" style="color: darkred;"></p>
+    </body>
+</html>

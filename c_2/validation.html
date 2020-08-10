@@ -1,0 +1,37 @@
+<html>
+    <script>
+        function checkfield1(){
+            var field=document.getElementById("field1").value;
+            if(field.length < 5)
+                document.getElementById("msg1").innerHTML="Too short";
+            else
+                document.getElementById("msg1").innerHTML="That's long enough";
+        }
+        function checkfield2(){
+            var fields=document.getElementById("field2").value;
+            if(fields !=" ")
+                document.getElementById("msg2").innerHTML= "input accepted";  
+            else
+                document.getElementById("msg2").innerHTML= "input not accepted";
+        }
+        function checkfield3()
+        {
+            var field3=document.getElementById("field3").value;
+            var regex=/^[A-Za-z]{3}$/;
+            if(regex.test(field1))
+            document.getElementById("msg3").innerHTML="accepted";
+            else
+            document.getElementById("msg3").innerHTML="Please enter three digit country code";
+        }
+    </script>
+    <head>Validation</head><br>
+    <title>Validation testing</title>
+    <body>
+        Field1:<input id="field1" type="text" onblur="checkfield1();"><span id="msg1"><br>
+        Field2:<input id="field2" type="text" onblur="checkfield2();"><span id="msg2"><br>
+        country code js:<input id="field3" type="text" onblur="checkfield3();"><span id="msg3"><br>
+        country code html:<input type="text" name="code" pattern="[A-Za-z]{3}" required><br>
+        <input type="submit" value="submit">
+        </span>
+    </body>
+</html>

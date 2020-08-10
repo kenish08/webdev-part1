@@ -1,0 +1,21 @@
+<html>
+    <script>
+        function mypromt()
+        {
+            var pro = prompt("Please enter your name","kenish");
+            if(pro!="")
+            {
+                document.getElementById("name").innerHTML="hello " +pro+ ", how are you today!";
+            }
+            else
+            {
+                alert("Hey!, no input");
+            }
+        }
+    </script>
+    <body>
+        <p>PROMT</p>
+        <button onclick="mypromt()";>Click me</button>
+        <p id="name"></p>
+    </body>
+</html>
